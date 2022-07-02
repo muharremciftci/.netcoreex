@@ -36,11 +36,13 @@ namespace webui.Controllers
             };
 
 
-                var category = new Category{Name="Telefonlar",Description="Telefon Kategorisi"};
+     
+
+                // var category = new Category{Name="Telefonlar",Description="Telefon Kategorisi"};
                 
                 var productViewModel=new ProductViewModel()
                 {
-                    Category=category,
+                   
                     Products=products
                 };
 
