@@ -45,5 +45,6 @@ C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\Sh
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\Shared\_categories.cshtml.g.cs
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\Shared\Components\Categories\Default.cshtml.g.cs
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\Shared\_layout.cshtml.g.cs
-C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\staticwebassets\webui.StaticWebAssets.xml
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\muhar\Desktop\projects\.netcoreex\webui\bin\Debug\net5.0\package-lock.json
+C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\staticwebassets\webui.StaticWebAssets.xml
