@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using webui.Data;
 using webui.Models;
@@ -25,15 +26,27 @@ namespace webui.Controllers
 
 
             return View(product);
+
+
+            //product/list => tüm ürünler gelsin
+            //product/list/2 => belli ürünler glesin
         }
-        public IActionResult List()
+        public IActionResult List(int? id)
         {
 
-            // var category = new Category{Name="Telefonlar",Description="Telefon Kategorisi"};                
+            // var category = new Category{Name="Telefonlar",Description="Telefon Kategorisi"};      
+
+            var products = ProductRepository.Products;
+
+            if (id!=null)
+            {
+                products=products.Where(p=>p.CategoryId==id).ToList();
+            }
+
             var productViewModel = new ProductViewModel()
             {
 
-                Products = ProductRepository.Products
+                Products = products
             };
 
 
@@ -42,14 +55,11 @@ namespace webui.Controllers
         }
 
 
-        public IActionResult Details()
+        public IActionResult Details(int id)
         {
-            var product = new Product();
-            product.Name = "samsung 6";
-            product.Price = 3000;
-            product.Description = "iyi telefon";
+          
 
-            return View(product);
+            return View(ProductRepository.GetProductById(id));
 
         }
     }
