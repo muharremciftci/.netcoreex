@@ -31,24 +31,29 @@ namespace webui.Controllers
             //product/list => tüm ürünler gelsin
             //product/list/2 => belli ürünler glesin
         }
-        public IActionResult List(int? id)
+        public IActionResult List(int? id, string q)
         {
 
             // var category = new Category{Name="Telefonlar",Description="Telefon Kategorisi"};      
 
-            var products = ProductRepository.Products;
+            var products = ProductRepository.Products; //tüm listeleme
 
-            if (id!=null)
+           
+             if (id!=null) // id ye göre listeleme
             {
                 products=products.Where(p=>p.CategoryId==id).ToList();
             }
 
-            var productViewModel = new ProductViewModel()
+            if (!string.IsNullOrEmpty(q)) //searchbox listeleme
+            {
+                 products=products.Where(i=>i.Name.ToLower().Contains(q) || i.Description.ToLower().Contains(q)).ToList();
+            }
+
+              var productViewModel = new ProductViewModel()
             {
 
                 Products = products
             };
-
 
             return View(productViewModel);
 
@@ -61,6 +66,11 @@ namespace webui.Controllers
 
             return View(ProductRepository.GetProductById(id));
 
+        }
+   
+        public IActionResult Create()
+        {
+            return View();
         }
     }
 }
