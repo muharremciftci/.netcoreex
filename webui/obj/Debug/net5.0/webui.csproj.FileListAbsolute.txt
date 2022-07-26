@@ -50,4 +50,3 @@ C:\Users\muhar\Desktop\projects\.netcoreex\webui\bin\Debug\net5.0\package-lock.j
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\bin\Debug\net5.0\package.json
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
 C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
-C:\Users\muhar\Desktop\projects\.netcoreex\webui\obj\Debug\net5.0\staticwebassets\webui.StaticWebAssets.xml

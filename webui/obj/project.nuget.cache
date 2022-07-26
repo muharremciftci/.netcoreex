@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WLl7rJJZYqGj2jgG9ldN6Mb3puq4ulrJSS3foEmvlsz0aXGJFQVmWhpFDBfOexd9BOIybX4Ik3HzRvylOS+tVg==",
+  "dgSpecHash": "yTd4hswp+R4rInHfCIt9mjHL/Umx1t4jv2jjcxDB76FmlvkDPL95n/e9Oq0ct40eLI6NZCt1z+MJr+P9+SpjWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\muhar\\Desktop\\projects\\.netcoreex\\webui\\webui.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\muhar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
